@@ -88,6 +88,9 @@ p{
     width: 20%;
     object-fit: cover;
 }
+.content img:hover {
+    filter: blur(1px);
+}
 
 /*LES BOUTTONS */
 .btn {
@@ -103,12 +106,16 @@ p{
     background-color: black;
     font-size: 25px;
     cursor: pointer;
+
+}
+.btn button:hover {
+    box-shadow: 5px 5px 0px 10px black;
 }
 /*Les description*/
 .article{
     margin-top: 180px;
     background-color: black;
-    padding: 20px;
+    padding: 100px;
     
 }.article p{
     text-align: start;
@@ -117,7 +124,7 @@ p{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.645);
 }
-.p_eiffel , .p_dame , .p_arc , .p_michel , .p_versaille{
+#p_eiffel , #p_dame , #p_arc , #p_michel , #p_versaille{
     display: none;
 
 }
@@ -126,9 +133,13 @@ p{
     color: white;
 }
 h3{
+    margin-top: 30px;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.507);
 }
 strong{
     color: white;
+}
+iframe{
+    margin-top:60px;
 }
