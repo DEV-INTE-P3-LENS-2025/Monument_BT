@@ -74,6 +74,7 @@ h1{
     font-size: 60px;
 }
 p{
+    text-align: center;
     text-decoration: underline;
     font-size: 25px;
 }
@@ -101,6 +102,7 @@ p{
     color: white;
     background-color: black;
     font-size: 25px;
+    cursor: pointer;
 }
 /*Les description*/
 .article{
@@ -109,10 +111,15 @@ p{
     padding: 20px;
     
 }.article p{
+    text-align: start;
     margin-top: 15px;
     font-size: 25px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.645);
+}
+.p_eiffel , .p_dame , .p_arc , .p_michel , .p_versaille{
+    display: none;
+
 }
 .article h2 {
     font-size: 66px;
