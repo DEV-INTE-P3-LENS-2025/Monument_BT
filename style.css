@@ -11,6 +11,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -24,6 +25,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
 }
 
 img,
@@ -65,4 +67,55 @@ a {
 #root,
 #__next {
     isolation: isolate;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 60px;
+}
+p{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-size: 25px;
+}
+/*Les images*/
+.content{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+}
+.content img{
+    width: 20%;
+    object-fit: cover;
+}
+
+/*LES BOUTTONS */
+.btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    
+    
+}
+.btn button{
+    padding: 25px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+}
+/*Les description*/
+.article{
+    display: none;
+    justify-items: flex-start;
+    margin-top: 180px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+}.article p{
+    text-decoration: none;
+}
+.article h2{
+    font-size: 45px;
 }
