@@ -71,6 +71,7 @@ a {
 h1{
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 40px;
     font-size: 60px;
 }
 p{
@@ -80,23 +81,23 @@ p{
 }
 /*Les images*/
 .content{
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     width: 100%;
 }
 .content img{
+    filter: grayscale();
+    cursor: pointer;
     width: 20%;
     object-fit: cover;
 }
-.content img:hover {
-    filter: blur(1px);
-}
+
 
 /*LES BOUTTONS */
 .btn {
     display: flex;
     justify-content: space-around;
-    margin-top: 120px;
+    margin-top: 100px;
     
     
 }

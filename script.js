@@ -21,23 +21,34 @@ const img_versaille = document.getElementById("versaille");
 //fonction pour afficher mon article selon le boutton monument
 
 function appel(articleClass) {
-    // Masquer tous les articles (on suppose qu'ils sont déjà en display: none par défaut)
-    const id = ["p_eiffel", "p_dame", "p_arc", "p_michel", "p_versaille"];
-    
-    // Masquer tous les articles
-    id.forEach(cls => {
-      const element = document.getElementById(cls);
-      if (element) {
-        element.style.display = "none";
-      }
-      
-    });
+  // Liste des IDs des articles et des images associées
+  const ids = ["p_eiffel", "p_dame", "p_arc", "p_michel", "p_versaille"];
+  const imgIds = ["tour", "dame", "arc", "michel", "versaille"];
   
-    // Afficher l'article correspondant au bouton cliqué
-    const article = document.getElementById(articleClass);
-    if (article) {
-      article.style.display = "block";
-      
-    }
+  // Masquer tous les articles et appliquer le filtre grayscale sur toutes les images
+  ids.forEach((cls, index) => {
+      const article = document.getElementById(cls); // Trouver l'article
+      const img = document.getElementById(imgIds[index]); // Trouver l'image correspondante
+
+      if (article) {
+          article.style.display = "none"; // Masquer l'article
+      }
+
+      if (img) {
+          img.style.filter = "grayscale(100%)"; // Appliquer le filtre grayscale sur l'image
+      }
+  });
+
+  // Afficher l'article correspondant au bouton cliqué et enlever le filtre gris sur l'image correspondante
+  const articleToShow = document.getElementById(articleClass); // Trouver l'article à afficher
+  const imgToShow = document.getElementById(imgIds[ids.indexOf(articleClass)]); // Trouver l'image correspondante à cet article
+
+  if (articleToShow) {
+      articleToShow.style.display = "block"; // Afficher l'article sélectionné
   }
+
+  if (imgToShow) {
+      imgToShow.style.filter = "none"; // Enlever le filtre grayscale sur l'image correspondante
+  }
+}
   
