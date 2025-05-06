@@ -18,13 +18,16 @@ const img_arc = document.getElementById("arc");
 const img_michel = document.getElementById("michel");
 const img_versaille = document.getElementById("versaille");
 
-//fonction pour afficher mon article selon le boutton monument
 
-function appel(articleClass) {
-  // Liste des IDs des articles et des images associées
-  const ids = ["p_eiffel", "p_dame", "p_arc", "p_michel", "p_versaille"];
+// Liste des IDs des articles et des images associées
+const ids = ["p_eiffel", "p_dame", "p_arc", "p_michel", "p_versaille"];
   const imgIds = ["tour", "dame", "arc", "michel", "versaille"];
-  
+
+
+//fonction pour afficher mon article selon le boutton monument
+function appel(articleClass) {
+
+
   // Masquer tous les articles et appliquer le filtre grayscale sur toutes les images
   ids.forEach((cls, index) => {
       const article = document.getElementById(cls); // Trouver l'article
@@ -32,11 +35,12 @@ function appel(articleClass) {
 
       if (article) {
           article.style.display = "none"; // Masquer l'article
+
       }
 
       if (img) {
           img.style.filter = "grayscale(100%)"; // Appliquer le filtre grayscale sur l'image
-      }
+           }
   });
 
   // Afficher l'article correspondant au bouton cliqué et enlever le filtre gris sur l'image correspondante
@@ -48,7 +52,13 @@ function appel(articleClass) {
   }
 
   if (imgToShow) {
-      imgToShow.style.filter = "none"; // Enlever le filtre grayscale sur l'image correspondante
+    console.log(imgToShow)
+      imgToShow.classList.toggle("active");
+      imgToShow.style.filter = "unset";
+    
+      imgToShow.style.zIndex = 10;
+      
   }
+  
 }
   
