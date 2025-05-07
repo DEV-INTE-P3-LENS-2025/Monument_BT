@@ -55,8 +55,6 @@ function appel(articleClass) {
     console.log(imgToShow)
       imgToShow.classList.toggle("active");
       imgToShow.style.filter = "unset";
-    
-      imgToShow.style.zIndex = 10;
       
   }
   
