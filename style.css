@@ -1,0 +1,160 @@
+:root {
+    --black: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+button {
+    background-color: unset;
+    border: unset;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+p{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+}
+/*Les images*/
+.content{
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+}
+a{
+    text-align: center;
+}
+.content img{
+    display: inline;
+    align-items: center;
+    position: relative;
+    filter: grayscale();
+    cursor: pointer;
+    width: 19%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+img.active {
+    z-index: 2;
+}
+
+/*LES BOUTTONS */
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-right: 20px;
+    
+    
+}
+.btn button{
+    padding: 25px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.btn button:hover {
+    box-shadow: 5px 5px 0px 10px black;
+}
+/*Les descriptions*/
+#article{
+    margin-top: 180px;
+    background-color: black;
+    padding: 100px;
+    
+}
+#article p{
+    text-align: start;
+    margin-top: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.645);
+}
+#p_eiffel , #p_dame , #p_arc , #p_michel , #p_versaille{
+    display: none;
+
+}
+#article h2 {
+    font-size: 66px;
+    color: white;
+}
+h3{
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.507);
+}
+strong{
+    color: white;
+}
+iframe{
+    margin-top:60px;
+}

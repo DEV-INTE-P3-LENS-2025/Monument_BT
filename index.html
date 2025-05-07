@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les monuments</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>LES MONUMENTS</h1>
+    </header>
+    <P>cliquer sur un monument ou son button pour obtenir la description. </P>
+    <section class="monument">
+        <div class="btn">
+            <a href="#article"><button id="btn_eiffel" onclick="appel(`p_eiffel`)">Tour Eiffel</button></a> 
+            <a href="#article"><button id="btn_dame" onclick="appel(`p_dame`)">Notre Dame</button> </a>
+            <a href="#article"><button id="btn_arc" onclick="appel(`p_arc`)">Arc de Triomphe</button> </a>
+            <a href="#article"><button id="btn_michel" onclick="appel(`p_michel`)">Saint-michel</button> </a>
+            <a href="#article"><button id="btn_versaille" onclick="appel(`p_versaille`)">Versaille</button></a> 
+        </div>
+        <div class="content">
+         <a href="#article"><img id="tour" class="img" src="./images/eiffel-1530259.jpeg" alt="" onclick="appel(`p_eiffel`)">
+            <img id="dame" class="img" src="./images/pexels-dhenry-5440810.jpg" alt="" onclick="appel(`p_dame`)">
+            <img id="arc" class="img" src="./images/free-photo-of-magnifique-vue-sur-l-arc-de-triomphe-a-paris.jpeg" alt="" onclick="appel(`p_arc`)">
+            <img id="michel" class="img" src="./images/mont-saint-michel-france-normandy-europe.webp" alt="" onclick="appel(`p_michel`)">
+            <img id="versaille" class="img" src="./images/versaille-30021687.jpeg" alt="" onclick="appel(`p_versaille`)">
+         </a>
+        </div>
+    </section>
+    <section id="article">
+       <div id="p_eiffel">
+             <h2>Tour Eiffel</h2>
+             <h3>Paris,<strong>France</strong></h3>
+             <p class="eiffel">Symbole emblématique de Paris, la Tour Eiffel est une structure en fer de 330 mètres de haut, construite en 1889 pour l'Exposition Universelle. Elle offre une vue imprenable sur la capitale et est l'un des monuments les plus visités au monde.</p>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916261109456!2d2.291906376340541!3d48.85837007133219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1746454479521!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+        <div id="p_dame">
+            <h2>Notre Dame</h2>
+            <h3>Paris, <strong>France</strong></h3>
+            <p class="notre_dame">Notre-Dame de Paris : Cathédrale gothique située sur l'île de la Cité, Notre-Dame est un chef-d'œuvre de l'architecture médiévale. Construite entre le 12e et 14e siècles, elle est célèbre pour ses gargouilles, ses vitraux et son impressionnante façade. </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.227970652893!2d2.333176008387984!3d48.85235610854024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e39dd448af%3A0xe95d8ec82cfaf643!2sNotre%20Dame%2C%20Paris!5e0!3m2!1sfr!2sfr!4v1746454527361!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="p_arc">
+            <h2>L'Arc de Triomphe</h2><BR></BR>
+            <h3>Paris, <strong>France</strong></h3>
+            <p class="triomphe">Arc de Triomphe : Situé sur la place Charles de Gaulle, cet arc monumental a été construit en l'honneur des victoires napoléoniennes. Il mesure 50 mètres de haut et est décoré de sculptures et de bas-reliefs, avec une vue panoramique depuis son sommet.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.1827997550004!2d2.2924525763414803!3d48.873791671334196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8f%3A0xd9b5676e112e643d!2sArc%20de%20Triomphe!5e0!3m2!1sfr!2sfr!4v1746454552249!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+        <div id="p_michel">
+            <h2>Mont Saint-Michel</h2>
+            <h3>Normandie, <strong>France</strong></h3>
+            <p class="saint-michel">Mont Saint-Michel : Situé en Normandie, le Mont Saint-Michel est un îlot rocheux surmonté d'une abbaye médiévale. À marée haute, il devient une île, et à marée basse, il est relié au continent par une route.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.627789441593!2d-1.513818923672763!3d48.636104271302884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48065844370cc7c1%3A0x3b3b252279d89f96!2sMont%20Saint-Michel!5e0!3m2!1sfr!2sfr!4v1746454655826!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="p_versaille">
+            <h2>Versaille</h2>
+            <h3>Paris, <strong>France</strong></h3>
+            <p class="versaille">Château de Versailles : Résidence royale emblématique, le Château de Versailles, situé près de Paris, est un exemple exceptionnel d'architecture baroque. Il est célèbre pour ses vastes jardins, ses appartements royaux et la Galerie des Glaces, où le traité de Versailles a été signé en 1919.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5255.592744290808!2d2.1177804763373453!3d48.804864871324874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d94d7b14c75%3A0x538fcc15f59ce8f!2sCh%C3%A2teau%20de%20Versailles!5e0!3m2!1sfr!2sfr!4v1746454603730!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
