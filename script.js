@@ -52,7 +52,6 @@ function appel(articleClass) {
   }
 
   if (imgToShow) {
-    console.log(imgToShow)
       imgToShow.classList.toggle("active");
       imgToShow.style.filter = "unset";
       
